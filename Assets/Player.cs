@@ -24,6 +24,8 @@ public class Player : MonoBehaviour {
         {
             Debug.Log("GAME OVER");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Chain.playAudio = true;
+            Chain.IsFired = false;
         }
     }
 }
